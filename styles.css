@@ -7,48 +7,52 @@
 
 .box1 {
     background-color: lightblue;
+    transition: background-color 2s ease;
 }
 
-/* .box1:hover {
+.box1:hover {
     background-color: lightcoral;
-} */
+}
 
 .box2 {
     background-color: lightgreen;
+    transition: transform 3s ease;
 }
 
-/* .box2:hover {
+.box2:hover {
     transform: rotate(45deg);
-} */
+}
 
 .box3 {
     background-color: rgb(246, 246, 156);
+    transition: width 1s ease, height 2s ease, background-color 2s ease;
 }
 
-/* .box3:hover {
+.box3:hover {
     width: 200px;
     height: 200px;
     background-color: lightsalmon;
-} */
+}
 
 .box4 {
     background-color: lightcyan;
-    /*transition: transform 2s ease;*/
+    transition: transform 2s ease;
 }
 
 .box4:hover {
-    transform: translateY(200px);
+    transform: translateX(200px);
 }
 
 .box5 {
     background-color: lightpink;
+    transition: all 2s steps(5,end);
 }
 
-/* .box5:hover {
+.box5:hover {
     width: 200px;
     height: 200px;
-    background-color: lightseagreen;
-} */
+    background-image: image();
+}
 
 p {
     font-size: 20px;
@@ -58,4 +62,25 @@ p {
     padding: 10px;
     background-color: black;
     margin: 20px;
+}
+a{
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+    background-color: #333;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+nav {
+    display: flex;
+    gap: 10px;
+}
+body{
+    background-color: lightslategray;
 }
