@@ -33,11 +33,11 @@
 
 .box4 {
     background-color: lightcyan;
-    transition: transform 2s ease;
+    /*transition: transform 2s ease;*/
 }
 
 .box4:hover {
-    transform: translateX(200px);
+    transform: translateY(200px);
 }
 
 .box5 {
